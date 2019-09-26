@@ -1,8 +1,21 @@
 site_name: DTC MkDocs POC
 nav:
-  - "Welcome to our POC!": index.md
-theme: readthedocs
+  - "The POC welcomes you!": index.md
+  - Alma Section:
+    - 'Foo': alma/foo.md
+    - 'Bar': alma/bar.md
+  - Barack Section:
+    - 'Baz': barack/baz.md
+    - 'Foobar': barack/foobar.md
+docs_dir: 'docs'
+theme:
+  name: 'material'
+  favicon: 'images/favicon.ico'
+  logo: 'images/favicon.ico'
 markdown_extensions:
+  - yafg
+  - footnotes
+  - admonition
   - markdown_include.include:
       base_path: docs
   - attr_list

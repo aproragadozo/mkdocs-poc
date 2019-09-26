@@ -3,7 +3,7 @@ Date: 2019-09-24
 Category: Documentation
 Slug: looks-promising
 
-# An h1 header {: #title-header .title level='one' }
+# Thank you for your interest in our POC {: #title-header .title level='one' }
 
 Paragraphs are separated by a blank line.
 
@@ -31,9 +31,13 @@ Itemized lists look like this:
 * that one
 * the other one
 
-## Here is where I'd like to include an external file
+The content between the two horizontal lines below is transcluded from `alma.txt`.
+
+---
 
 {!alma.txt!}
+
+---
 
 ```Bash tab=
 #!/bin/bash
@@ -121,12 +125,8 @@ Now a nested list:
     6. wait 10 minutes
     7. goto first step (or shut off burner when done)
 
-    ---
-    NOTE
-
-    Do not bump wooden spoon or it will fall.
-
-    ---
+    !!! Note
+        Do not bump wooden spoon or it will fall.
 
 Notice again how text always lines up on 4-space indents (including
 that last line which continues item 3 above).
