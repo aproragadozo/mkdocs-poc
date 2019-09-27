@@ -19,3 +19,7 @@ Install them using `pip`
 * mkdocs-material
 
 * yafg
+
+* mkdocs-macros-plugin
+
+* mkdocs-htmlproofer-plugin
