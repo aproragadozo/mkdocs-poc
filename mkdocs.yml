@@ -7,12 +7,20 @@ nav:
   - Barack Section:
     - 'Baz': barack/baz.md
     - 'Foobar': barack/foobar.md
+    - Sub-Nest:
+        - 'Deeper Still': barack/cekla/foobaz.md
 docs_dir: 'docs'
+site_dir: '/home/bitnami/mkdocs-test/site'
+plugins:
+  - search
+  - macros
+  - htmlproofer
 theme:
   name: 'material'
   favicon: 'images/favicon.ico'
   logo: 'images/favicon.ico'
 markdown_extensions:
+  - tables
   - yafg
   - footnotes
   - admonition
@@ -33,3 +41,8 @@ markdown_extensions:
           format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
 extra_css:
   - css/tabbed-superfence.css
+extra:
+  price: 12.50
+  company:
+    name: Acme
+    address: 123 Sample Drive Yoknapatawpha

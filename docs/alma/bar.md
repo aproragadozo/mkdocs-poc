@@ -1,5 +1,7 @@
 # Bar
 
+> Kindly have a look at our newest content [here](../barack/cekla/foobaz.md#emily-dickinson).
+
 !!! Admonition
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor

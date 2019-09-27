@@ -126,7 +126,7 @@ Now a nested list:
     7. goto first step (or shut off burner when done)
 
     !!! Note
-        Do not bump wooden spoon or it will fall.
+        Everything not saved will be lost.
 
 Notice again how text always lines up on 4-space indents (including
 that last line which continues item 3 above).
