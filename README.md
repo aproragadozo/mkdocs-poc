@@ -10,13 +10,9 @@ Have a look at [mkdocs.org](https://www.mkdocs.org/).
 
 Install them using `pip`
 
-* python-markdown
-
 * mkdocs
 
 * markdown-include
-
-* markdown-extra
 
 * pymdown-extensions
 
