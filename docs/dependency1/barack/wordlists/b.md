@@ -3,19 +3,21 @@
 ## A collapsible section with markdown
 
 <details>
-  <summary>Click to expand!</summary><p>
+  <summary>Click to expand!</summary>
   
-## Heading
+<h2>Heading</h2>
 
-1. A numbered
+  <ol>
+    <li>A numbered</li>
+    <li>list
+       <ul>
+         <li>With some</li>
+         <li>Sub bullets</li>
+       <ul>
+    </li>
+  </ol>
 
-2. list
-
-    * With some
-
-    * Sub bullets
-
-## Code blocks also supported!
+<h2>Code blocks also supported!</h2>
 
 ```javascript
 function alma(foo, bar, baz) {
@@ -23,4 +25,4 @@ function alma(foo, bar, baz) {
 }
 ```
 
-</p></details>
+</details>
