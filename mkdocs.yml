@@ -1,6 +1,5 @@
 site_name: DTC MkDocs POC
 nav:
-  - "The POC welcomes you!": index.md
   - Alma Section:
     - 'Foo': alma/foo.md
     - 'Bar': alma/bar.md
@@ -9,18 +8,24 @@ nav:
     - 'Foobar': barack/foobar.md
     - Sub-Nest:
         - 'Deeper Still': barack/cekla/foobaz.md
+        - Sub-sub Nest:
+          - "This is Foo-foo!": barack/cekla/dio/foofoo.md
+          - "Also ran": barack/cekla/dio/barbar.md
+  - "The POC welcomes you!": index.md
 docs_dir: 'docs'
 site_dir: '/home/bitnami/mkdocs-test/site'
 plugins:
   - search
-  - macros
   - htmlproofer
+  - macros
 theme:
   name: 'material'
   favicon: 'images/favicon.ico'
   logo: 'images/favicon.ico'
+  custom_dir: 'theme'
 markdown_extensions:
   - tables
+  - cell_row_span
   - yafg
   - footnotes
   - admonition

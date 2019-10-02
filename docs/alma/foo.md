@@ -2,7 +2,7 @@
 
 I'm adding [a broken link here](https://www.quackkit.com/html/codes/html_open_link_in_new_window.cfm), just to see what happens.
 
-## This info is courtesy of the ***macros*** plugin
+This info is courtesy of the ***macros*** plugin
 
 The price of the product is {{ price }}, manufactured by ***{{company.name}}*** (their address is {{company.address}}).
 

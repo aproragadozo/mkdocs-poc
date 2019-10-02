@@ -1,0 +1,4 @@
+# Barbar
+
+!!! note
+    {!barack.txt!}

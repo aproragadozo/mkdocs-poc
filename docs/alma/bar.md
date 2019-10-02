@@ -25,3 +25,12 @@ def swap_variables:
     print('The value of x after swapping: {}'.format(x))
     print('The value of y after swapping: {}'.format(y))
 ```
+
+## Second heading
+
+| Column 1                | Col 2 | Big row span   |
+|:-----------------------:|-------| -------------- |
+| This cell spans two cols           || One large cell |
+| This cell spans two rows    | r2_c2 |                |
+|_                      _| r3_c2 |                |
+|    This could be anything here, right?         | r4_c2 |_              _|
