@@ -1,5 +1,6 @@
 site_name: DTC MkDocs POC
 nav:
+  - The POC welcomes you!: index.md
   - Alma Section:
     - 'Foo': alma/foo.md
     - 'Bar': alma/bar.md
@@ -11,7 +12,12 @@ nav:
         - Sub-sub Nest:
           - "This is Foo-foo!": barack/cekla/dio/foofoo.md
           - "Also ran": barack/cekla/dio/barbar.md
-  - "The POC welcomes you!": index.md
+  - This is Coming from a Dependent Repo:
+    - Can You See This?: dependency1/alma/foo.md
+    - This Is Actually a Sub-Dependency!:
+      - A: dependency1/barack/wordlists/a.md
+      - B: dependency1/barack/wordlists/b.md
+      - C: dependency1/barack/wordlists/c.md
 docs_dir: 'docs'
 site_dir: '/home/bitnami/mkdocs-test/site'
 plugins:
