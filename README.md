@@ -12,7 +12,7 @@ Install them using `pip`.
 
 * mkdocs
 
-* markdown-include
+* mdx_include
 
 * pymdown-extensions
 
