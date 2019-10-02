@@ -38,3 +38,8 @@
 .superfences-tabs input:nth-child(n+1):checked + label + .superfences-content {
     display: block;
 }
+/* attempt at customizing the material theme header bar */
+header.md-header {
+  background: #adb9c6;
+  color: #14304f;
+}

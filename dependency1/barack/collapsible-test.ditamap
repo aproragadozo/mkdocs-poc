@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Are collapsible sections supported in LightWeight DITA?</title>
+    <topicmeta>
+        <metadata>
+            <category/>
+            <prodinfo>
+                <prodname>HPE 5G</prodname>
+                <vrmlist>
+                    <vrm version="" release="1.0"/>
+                </vrmlist>
+                <platform>Linux</platform>
+                <component>UDM, UDR, UDSF, AUSF, NRF, NEF</component>
+            </prodinfo>
+        </metadata>
+    </topicmeta>
+    <topicref href="wordlists/b.md" format="markdown" keys="B"/>
+</map>
