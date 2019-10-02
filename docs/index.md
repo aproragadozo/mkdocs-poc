@@ -1,7 +1,4 @@
-Title: Landing page for the MkDocs POC
-Date: 2019-09-24
-Category: Documentation
-Slug: looks-promising
+[TOC]
 
 # Thank you for your interest in our POC {: #title-header .title level='one' }
 
@@ -33,11 +30,15 @@ Itemized lists look like this:
 
 The content between the two horizontal lines below is transcluded from `alma.txt`.
 
----
-
-{!alma.txt!}
+1. An ordered list starts *before* the transclusion.
 
 ---
+
+{! docs/alma.txt !}
+
+---
+
+1. The ordered list terminates *after* the transclusion.
 
 ```Bash tab=
 #!/bin/bash

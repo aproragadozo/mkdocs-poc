@@ -26,12 +26,16 @@ theme:
 markdown_extensions:
   - tables
   - cell_row_span
+  - mdx_include
   - yafg
   - footnotes
   - admonition
-  - markdown_include.include:
-      base_path: docs
+#  - markdown_include.include:
+#      base_path: docs
   - attr_list
+  - toc:
+      title: "How do you like my fancy TOC?"
+  - sane_lists
   - pymdownx.superfences:
       preserve_tabs: true
       custom_fences: 

@@ -1,4 +1,4 @@
 # Barbar
 
 !!! note
-    {!barack.txt!}
+    {! docs/barack.txt !}
