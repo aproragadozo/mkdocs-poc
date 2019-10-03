@@ -14,7 +14,7 @@ nav:
           - "Also ran": barack/cekla/dio/barbar.md
   - From the Dependent Repo:
     - Can You See This?: dependency1/alma/foo.md
-    - This Is Actually a Sub-Dependency!:
+    - This Is a Sub-Dependency!:
       - A: dependency1/barack/wordlists/a.md
       - B: dependency1/barack/wordlists/b.md
       - C: dependency1/barack/wordlists/c.md
@@ -40,8 +40,8 @@ markdown_extensions:
 #  - markdown_include.include:
 #      base_path: docs
   - attr_list
-  - toc:
-      title: "How do you like my fancy TOC?"
+#  - toc:
+#      title: "How do you like my fancy TOC?"
   - sane_lists
   - pymdownx.superfences:
       preserve_tabs: true

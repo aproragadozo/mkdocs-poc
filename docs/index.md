@@ -1,4 +1,6 @@
+<!--
 [TOC]
+-->
 
 # Thank you for your interest in our POC {: #title-header .title level='one' }
 

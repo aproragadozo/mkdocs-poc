@@ -86,10 +86,11 @@ header.md-header {
   background: rgb(1, 169, 130);
   color: white;
 }
-/* disabling the per-page table of contents altogether */
+/* disabling the per-page table of contents altogether 
 .md-sidebar--secondary {
   display: none;
 }
+*/
 
 /* making the hpe logo nice */
 a.md-header-nav__button.md-logo > img {
