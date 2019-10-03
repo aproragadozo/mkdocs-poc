@@ -73,7 +73,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#a-header-for-no-real-reason" tabindex="1" class="md-skip">
+      <a href="#title-header" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -173,8 +173,6 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         The POC welcomes you!
@@ -188,13 +186,26 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#title-header" class="md-nav__link">
+    Thank you for your interest in our POC
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-header-for-no-real-reason" class="md-nav__link">
+    A header, for no real reason
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#an-h2-header" class="md-nav__link">
     An h2 header
   </a>
@@ -206,6 +217,11 @@
   <a href="#an-h3-header" class="md-nav__link">
     An h3 header
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -446,11 +462,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
-      This Is Actually a Sub-Dependency!
+      This Is a Sub-Dependency!
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
-        This Is Actually a Sub-Dependency!
+        This Is a Sub-Dependency!
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -515,13 +531,26 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#title-header" class="md-nav__link">
+    Thank you for your interest in our POC
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-header-for-no-real-reason" class="md-nav__link">
+    A header, for no real reason
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#an-h2-header" class="md-nav__link">
     An h2 header
   </a>
@@ -533,6 +562,11 @@
   <a href="#an-h3-header" class="md-nav__link">
     An h3 header
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -558,17 +592,10 @@
               
                 
                 
-                <div class="toc"><span class="toctitle">How do you like my fancy TOC?</span><ul>
-<li><a href="#title-header">Thank you for your interest in our POC</a></li>
-<li><a href="#a-header-for-no-real-reason">A header, for no real reason</a><ul>
-<li><a href="#an-h2-header">An h2 header</a><ul>
-<li><a href="#an-h3-header">An h3 header</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+[TOC]
+-->
+
 <h1 class="title" id="title-header" level="one">Thank you for your interest in our POC</h1>
 <p>Paragraphs are separated by a blank line.</p>
 <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>.</p>
@@ -598,7 +625,7 @@
 <li>An ordered list starts <em>before</em> the transclusion.</li>
 </ol>
 <hr />
-<h1 id="a-header-for-no-real-reason">A header, for no real reason</h1>
+<h2 id="a-header-for-no-real-reason">A header, for no real reason</h2>
 <ol start="2">
 <li>
 <p>This is some content that I'd like to include in some other files:</p>
