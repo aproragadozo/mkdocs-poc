@@ -1,4 +1,4 @@
-site_name: DTC MkDocs POC
+site_name: Docs Like Code Responsive Webhelp POC
 nav:
   - The POC welcomes you!: index.md
   - Alma Section:
@@ -12,7 +12,7 @@ nav:
         - Sub-sub Nest:
           - "This is Foo-foo!": barack/cekla/dio/foofoo.md
           - "Also ran": barack/cekla/dio/barbar.md
-  - This is Coming from a Dependent Repo:
+  - From the Dependent Repo:
     - Can You See This?: dependency1/alma/foo.md
     - This Is Actually a Sub-Dependency!:
       - A: dependency1/barack/wordlists/a.md
@@ -27,8 +27,9 @@ plugins:
 theme:
   name: 'material'
   favicon: 'images/favicon.ico'
-  logo: 'images/favicon.ico'
+  logo: 'images/hpe_pri_wht_rev_rgb.svg'
   custom_dir: 'theme'
+  font: false
 markdown_extensions:
   - tables
   - cell_row_span

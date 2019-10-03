@@ -32,5 +32,5 @@ def swap_variables:
 |:-----------------------:|-------| -------------- |
 | This cell spans two cols           || One large cell |
 | This cell spans two rows    | r2_c2 |                |
-|_                      _| r3_c2 |                |
+|_                       _| r3_c2 |                |
 |    This could be anything here, right?         | r4_c2 |_              _|

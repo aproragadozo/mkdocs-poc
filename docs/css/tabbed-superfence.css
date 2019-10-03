@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "MetricHPE";
+  src: url(../MetricHPE-Web-Regular.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url(../MetricHPE-Web-RegularItalic.woff) format(woff);
+  font-weight: normal;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url(../MetricHPE-Web-Bold.woff) format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url(../MetricHPE-Web-BoldItalic.woff) format(woff);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Mono";
+  src: url(../PTMono-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, input {
+  font-family: "MetricHPE", sans-serif;
+}
+
+code, kbd, pre {
+  font-family: "PT Mono", monospace;
+}
+
 .superfences-tabs {
   display: flex;
   position: relative;
@@ -5,7 +48,7 @@
 }
 
 .superfences-tabs .highlight {
-  background: #ddd;
+  background: #eaeaea;
 }
 
 .superfences-tabs .superfences-content {
@@ -40,6 +83,17 @@
 }
 /* attempt at customizing the material theme header bar */
 header.md-header {
-  background: #adb9c6;
-  color: #14304f;
+  background: rgb(1, 169, 130);
+  color: white;
+}
+/* disabling the per-page table of contents altogether */
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* making the hpe logo nice */
+a.md-header-nav__button.md-logo > img {
+  width: 4em !important;
+  height:1.3em !important;
+  object-fit: cover !important;
 }
