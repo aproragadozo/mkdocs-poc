@@ -1,5 +1,9 @@
 # Foo
 
+My first true love was a captioned image.
+
+![](../img/test-image-05.jpg "When I look into your eyes, I see the mirror of my soul.")
+
 I'm adding [a broken link here](https://www.quackkit.com/html/codes/html_open_link_in_new_window.cfm), just to see what happens.
 
 This info is courtesy of the ***macros*** plugin
