@@ -19,7 +19,7 @@ nav:
       - B: dependency1/barack/wordlists/b.md
       - C: dependency1/barack/wordlists/c.md
 docs_dir: 'docs'
-site_dir: '/home/bitnami/mkdocs-test/site'
+site_dir: 'site'
 plugins:
   - search
   - htmlproofer
