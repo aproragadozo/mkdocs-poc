@@ -1,0 +1,21 @@
+language: python
+
+python: 3.7
+
+branches: master
+
+install:
+    - pip install mkdocs mdx_include mkdocs-material pymdown-extensions yafg mkdocs-macros-plugin mkdocs-htmlproofer-plugin uuid requests bs4 urllib3
+
+script: true
+
+before_deploy:
+    - mkdocs build --verbose --clean --strict
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: site
+    on:
+        branch: master
