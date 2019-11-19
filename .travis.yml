@@ -1,3 +1,5 @@
+os: windows
+
 language: python
 
 python: 3.7
@@ -14,7 +16,7 @@ before_deploy:
 
 deploy:
     provider: pages
-    skip_cleanup: true
+    cleanup: true
     github_token: $GITHUB_TOKEN
     local_dir: site
     on:
