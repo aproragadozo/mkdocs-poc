@@ -32,7 +32,7 @@ theme:
   font: false
 markdown_extensions:
   - tables
-  - cell_row_span
+#  - cell_row_span
   - mdx_include
   - yafg
   - footnotes
