@@ -16,16 +16,20 @@ env:
 install:
     - pip install mkdocs mdx_include mkdocs-material pymdown-extensions yafg mkdocs-macros-plugin mkdocs-htmlproofer-plugin uuid requests bs4 urllib3
 
-script: mkdocs build --verbose --clean --strict
+script: git clean -f -d -x
 
-before_deploy:
-    - mkdocs build --verbose --clean --strict
+after success:
+    - git config user.name "aproragadozo"
+    - git config user.email "aproragadozo@gmail.com"
+    - git remote add gh-token "https://${GITHUB_TOKEN}@github.com/aproragadozo/mkdocs-poc.git";
+    - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+    - mkdocs gh-deploy -v --clean --remote-name gh-token;
 
-deploy:
-    provider: pages
-    cleanup: true
-    github_token: $GITHUB_TOKEN
-    local_dir: ../site
-    edge: true
-    on:
-        branch: master
+# deploy:
+#     provider: pages
+#     cleanup: true
+#     github_token: $GITHUB_TOKEN
+#     local_dir: site
+#     edge: true
+#     on:
+#         branch: master
