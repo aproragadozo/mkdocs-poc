@@ -9,49 +9,57 @@ It currently uses [python-markdown](https://python-markdown.github.io/), [MkDocs
 
 Review comment support is a planned feature (probably using [GitHub Issues](https://help.github.com/en/github/managing-your-work-on-github/about-issues)).
 
-## Requirements
+<details><summary>Site Requirements</summary>
 
-* The documentation site should support multiple GitHub repositories - the site should be re-deployed if any of the dependent repositories are updated.
+<ul>
+<li><p>The documentation site should support multiple GitHub repositories - the site should be re-deployed if any of the dependent repositories are updated.</p>
 
-    This is currently supported with git subtrees. Not ideal, because the editor needs to manually fetch updates from dependent repositories, but I haven't yet found a better solution. (Except for [Antora](https://antora.org/), which only supports AsciiDoc as content format.)
+<p>This is currently supported with git subtrees. Not ideal, because the editor needs to manually fetch updates from dependent repositories, but I haven't yet found a better solution. (Except for <a href="https://antora.org/">Antora</a>, which only supports AsciiDoc as content format.)</p></li>
 
-* The documentation content needs to be created in Markdown.
+<li><p>The documentation content needs to be created in Markdown.</p>
 
-    The trouble with CommonMark, the quasi-standard Markdown implementation, is that it does not meet many of the requirements listed below, and is not extensible. This is why I chose python-markdown as source content format for this project. It has several built-in extensions that extend Markdown syntax with features, it is easy to extend further with supported third-party extensions, and in a pinch, perhaps I could write my own extension in Python if an unsupported feature is a must-have.
+<p>The trouble with CommonMark, the quasi-standard Markdown implementation, is that it does not meet many of the requirements listed below, and is not extensible. This is why I chose python-markdown as source content format for this project. It has several built-in extensions that extend Markdown syntax with features, it is easy to extend further with supported third-party extensions, and in a pinch, perhaps I could write my own extension in Python if an unsupported feature is a must-have.</p></li>
 
-* File transclusion (dynamically pulling the content of one file into another) needs to be supported.
+<li><p>File transclusion (dynamically pulling the content of one file into another) needs to be supported.</p></li>
 
-* Image captions, and dynamic links to image captions need to be supported, much like in reStructuredText.
+<li><p>Image captions, and dynamic links to image captions need to be supported, much like in reStructuredText.</p></li>
 
-* Variables (e.g. for brand names, dates, or frequently recurring snippets of text or image) need to be supported.
+<li><p>Variables (e.g. for brand names, dates, or frequently recurring snippets of text or image) need to be supported.</p></li>
 
-* A test suite needs to be supported.
+<li><p>A test suite needs to be supported.</p>
 
-    Currently, Travis CI is only configured to deploy the automatically generated HTML files, but I am planning to run a spellchecker, a link checker, and style guide validation as part of the build.
+<p>Currently, Travis CI is only configured to deploy the automatically generated HTML files, but I am planning to run a spellchecker, a link checker, and style guide validation as part of the build.</p></li>
 
-* Footnotes need to be supported.
+<li><p>Footnotes need to be supported.</p></li>
 
-* Collapsible sections need to be supported.
+<li><p>Collapsible sections need to be supported.</p></li>
 
-* Syntax-highlighted code blocks that dynamically reference external files (nice to have: in external repositories) need to be supported.
+<li><p>Syntax-highlighted code blocks that dynamically reference external files (nice to have: in external repositories) need to be supported.</p></li>
 
-* Tabbed code blocks that let the user switch between code snippets written in different programming languages need to be supported.
+<li><p>Tabbed code blocks that let the user switch between code snippets written in different programming languages need to be supported.</p></li>
 
-* Table cells with merged rows and/or columns need to be supported.
+<li><p>Table cells with merged rows and/or columns need to be supported.</p>
 
-    I have chosen and made work the `cell_row_span` python-markdown extension locally. However, I haven't yet been able to integrate the extension with the Travis CI deployment. This feature is currently not supported, but fails relatively elegantly, that is, the tables are still displayed and styled, but cells do not span columns or rows.
+<p>I have chosen and made work the <code>cell_row_span</code> python-markdown extension locally. However, I haven't yet been able to integrate the extension with the Travis CI deployment. This feature is currently not supported, but fails relatively elegantly, that is, the tables are still displayed and styled, but cells do not span columns or rows.</p></li>
 
-* Linking to specific anchor points and/or headings, not only to files as a whole, is supported.
+<li><p>Linking to specific anchor points and/or headings, not only to files as a whole, is supported.</p></li>
 
-* Custom CSS styling of the output needs to be supported.
+<li><p>Custom CSS styling of the output needs to be supported.</p>
+</details>
 
-    Relying on a built-in python-markdown extension that offers identifiers and class attributes for elements.
+# Try it for yourself
 
-* The documentation site must accept traceable review comments.
+1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-    This is a future feature.
+2. [Set up GitHub Pages deployment for it](https://guides.github.com/features/pages/).
 
-# What you need to try this out locally
+3. [Sign up for a free Travis CI account](https://travis-ci.com/).
+
+4. [set up a Personal Access Token (PAT) for yourself on GitHub](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+
+5. [Encrypt the PAT, and replace the `secure` key with your encrypted key in the `.travis.yml` file](http://blog.code4hire.com/2016/06/adding-github-token-to-travis-ci-configuration/).
+
+6. [Trigger a build](https://stackoverflow.com/questions/17606874/trigger-a-travis-ci-rebuild-without-pushing-a-commit), and hack away at the markdown source as you like.
 <!--
 Have a look at [mkdocs.org](https://www.mkdocs.org/).
 
