@@ -26,7 +26,7 @@ plugins:
   - macros
 theme:
   name: 'material'
-  favicon: 'images/favicon.ico'
+  favicon: 'images/kitten.ico'
 #  logo: 'images/hpe_pri_wht_rev_rgb.svg'
   logo: 'images/green-cat.png'
   custom_dir: 'theme'
