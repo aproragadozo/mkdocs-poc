@@ -18,7 +18,7 @@ install:
 
 script: git clean -f -d -x
 
-after success:
+after_success:
     - git config user.name "aproragadozo"
     - git config user.email "aproragadozo@gmail.com"
     - git remote add gh-token "https://${GITHUB_TOKEN}@github.com/aproragadozo/mkdocs-poc.git";
