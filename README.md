@@ -55,7 +55,7 @@ Review comment support is a planned feature (probably using [GitHub Issues](http
 
 3. [Sign up for a free Travis CI account](https://travis-ci.com/).
 
-4. [set up a Personal Access Token (PAT) for yourself on GitHub](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+4. [Set up a Personal Access Token (PAT) for yourself on GitHub](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
 
 5. [Encrypt the PAT, and replace the `secure` key with your encrypted key in the `.travis.yml` file](http://blog.code4hire.com/2016/06/adding-github-token-to-travis-ci-configuration/).
 
